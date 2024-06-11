@@ -63,3 +63,16 @@ a{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 20px;
 }
+
+.show-btn{
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;
+    align-self: self-start;
+    margin-left: 9vw;
+    padding: 1vh 1vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+}
