@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quara Posts </h1>
+        <div class="post-container">
+
+            <% for(const post of postArray){ %>
+                <div class="post-item">
+                    <h3>
+                        <%= post.userName %>
+                    </h3>
+                    <h4>
+                        <%= post.content %>
+                    </h4>
+                </div>
+                <% } %>
+
+        </div>
+    </div><!-- div container end -->
+</body>
+
+</html>
