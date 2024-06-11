@@ -50,3 +50,16 @@ h4 {
     font: 400 1.2rem sans-serif;
     line-height: 5vh;
 }
+
+a{
+    color: white;
+    background-color: blueviolet;
+    text-decoration: none;
+    align-self: self-start;
+    margin-left: 5vw;
+    padding: 2vh 1vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 20px;
+}

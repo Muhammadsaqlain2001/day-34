@@ -27,12 +27,23 @@ let postArray = [
     content : "I love Coding"
 }
 ];
+// rout
 app.get('/', (req, res) => {
     res.send('server start well!')
 });
+
 app.get('/posts', (req, res)=>{
-    res.render('index.ejs', {postArray})
+    res.render('index.ejs', {postArray});
 });
+app.get('/posts/new', (req, res)=>{
+    res.render('new.ejs')
+});
+app.post('/posts', (req,res)=>{
+    let {userName, content}= req.body;
+    postArray.push({userName, content});
+    res.redirect('/posts')
+});
+
 app.listen(port, () => {
     console.log('listening on port : 5000');
 })
